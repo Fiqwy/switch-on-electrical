@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://switchonelec.com/sitemap.xml
