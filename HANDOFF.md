@@ -1,7 +1,34 @@
 # Switch On Electrical Contractors — Session Handoff
 
-**Last updated:** 2026-05-21 (v3 — real Services photos)
-**Status:** v3 = v2 + real Services photos. Not yet deployed publicly. Local preview live at http://localhost:8767/ when the dev server is running.
+**Last updated:** 2026-05-21 (v3 deployed to GitHub Pages preview)
+**Status:** v3 LIVE at the GitHub Pages preview URL — this is what Nicholas sends to Locky. Custom domain cutover deferred until Locky purchases.
+
+## Deployed (preview)
+
+- **Live URL:** https://fiqwy.github.io/switch-on-electrical/ — this is what gets sent to Locky.
+- **Repo:** https://github.com/Fiqwy/switch-on-electrical (public — required for GitHub Pages on free accounts)
+- **Branch + Pages config:** `main` root, auto-deploy on push (~30–60s propagation)
+- **Initial commit:** `a4a555f` — "Initial site — v3 spec pitch build for Locky"
+- **Verified at deploy time (2026-05-21):** homepage 200, suburb pages 200, all 8 Services photos 200, Leaflet vendor CSS 200, hero renders correctly in headless Chrome at 1280×800.
+
+**Deploy flow for future updates:**
+```bash
+cd "/Users/nicholasmatthews/claude code projects/switch-on-electrical"
+git add <specific-files>
+/commit    # global rule — use /commit, not raw git commit
+git push origin main
+# ~30–60s later: changes live at https://fiqwy.github.io/switch-on-electrical/
+```
+
+**Deferred until Locky purchases — DO NOT do without his sign-off:**
+- Custom domain `switchonelec.com` DNS cutover (Cloudflare → GitHub Pages CNAME or migrate to Cloudflare Pages)
+- Web3Forms access key (form silently fails until wired — see `switch-on-purchase-followups` memory)
+- T&Cs, privacy policy, licence number, insurance dollar amount, exact warranty length
+- Master Electricians AU badge (if applicable)
+- Service list edge cases, suburb priority order
+- See full Discovery menu in `~/.claude/plans/this-is-where-we-abundant-lake.md` sections A–I
+
+
 
 ## v3 — Real Services Photos (2026-05-21 late afternoon)
 
